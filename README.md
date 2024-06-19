@@ -32,7 +32,6 @@ Fork the repository.
 
 Credits
   Created by Ahmed Mohamed Bsher
-  Icons provided by Font Awesome
 
 License
   This project is licensed under the MIT License
