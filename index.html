@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" />
+
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>To-Do List</h1>
+            <div id="auth">
+                <button id="logout" style="display:none;">Logout</button>
+            </div>
+        </header>
+        <form id="todo-form">
+            <input type="text" id="new-task" placeholder="Add a new task" required>
+            <input type="date" id="due-date">
+            <select id="priority">
+                <option value="low">Low Priority</option>
+                <option value="medium">Medium Priority</option>
+                <option value="high">High Priority</option>
+            </select>
+            <input type="text" id="category" placeholder="Add category">
+            <button type="submit">Add</button>
+        </form>
+        <div id="controls">
+            <input type="text" id="search" placeholder="Search tasks">
+            <button id="toggle-theme">Toggle Dark Mode</button>
+        </div>
+        <div id="filters">
+            <button data-filter="all">All</button>
+            <button data-filter="active">Active</button>
+            <button data-filter="completed">Completed</button>
+        </div>
+        <ul id="todo-list"></ul>
+        <p id="feedback"></p>
+        <div id="progress-bar">
+            <div id="progress"></div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2024 Ahmed Bsher</p>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/ahmed.bsher.33046" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook-square"></i></a>
+            <a href="https://wa.me/qr/QNMYGNUDKIDAK1" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp-square"></i></a>
+            <a href="https://www.instagram.com/iahmedbsher/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram-square"></i></a>
+            <a href="https://twitter.com/ahmedbsher_" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-twitter-square"></i></a>
+            <a href="https://www.linkedin.com/in/ahmed-bsher-921242232/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/AhmedBsher" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
+        </div>
+    </footer>    
+
+    <script src="script.js"></script>
+</body>
+</html>
