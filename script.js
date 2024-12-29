@@ -54,10 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     function addTask(task, dueDate, priority, category) {
-        if (!currentUser) {
-            showFeedback('Please log in to add tasks.');
-            return;
-        }
+       
         if (task.trim() === '') {
             showFeedback('Task cannot be empty.');
             return;
